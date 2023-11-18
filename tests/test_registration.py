@@ -1,5 +1,7 @@
 from demoga_tests.pages.registration_page import RegistrationPage
 import allure
+from selene.support.shared import browser
+from selene import have, by
 
 @allure.title("Successful fill form")
 def test_registration(setup_browser):
@@ -28,3 +30,28 @@ def test_registration(setup_browser):
         'Mariya Zhurova', 'mzhurova4@mail.ru', 'Female', '9234324557', '04 October,1990', 'Maths', 'Sports',
         '2012091208303549.png', 'Tomsk, Altayskaya', 'Haryana Panipat'
     )
+
+
+def test_set_city(setup_browser):
+        browser.open('https://boxberry.ru/')
+        browser.element('.town__link').click()
+        browser.all('[class="town-popup__item town-popup__item_active"]').element_by(have.text('Россия')).click()
+        browser.element('[placeholder = "Поиск города"]').type('Томск')
+        browser.element('[class="town-popup__item-city"]').click()
+
+        browser.element('.town__link').should(have.text('Томск'))
+
+
+def test_login_im(setup_browser):
+        browser.open('https://boxberry.ru/')
+        browser.element('.town__link').click()
+        browser.all('[class="town-popup__item town-popup__item_active"]').element_by(have.text('Россия')).click()
+        browser.element('[placeholder = "Поиск города"]').type('Томск')
+        browser.element('[class="town-popup__item-city"]').click()
+        browser.element('.header__profile').click()
+        browser.all('[class="personal-accounts__text"]').element_by(have.text('Для интернет-магазинов')).click()
+
+        browser.driver.switch_to.window('https://account.boxberry.ru/')
+        browser.element('#authorizationform-email').type('Томск')
+        browser.element('.login-reg__head').should(have.text('Вход в личный кабинет'))
+        browser.element('.login-reg__tab').should(have.text('Регистрация'))
