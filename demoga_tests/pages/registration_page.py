@@ -10,7 +10,7 @@ class RegistrationPage:
 
     def open(self):
  #       browser.open('/automation-practice-form')
-        browser.open('/')
+        browser.open('')
 
     def type_first_name(self, value):
         browser.element('#firstName').type(value)
