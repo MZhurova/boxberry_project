@@ -33,7 +33,7 @@ def test_registration(setup_browser):
 
 
 def test_set_city(setup_browser):
-        browser.open('https://boxberry.ru/')
+        browser.open('')
         browser.element('.town__link').click()
         browser.all('[class="town-popup__item town-popup__item_active"]').element_by(have.text('Россия')).click()
         browser.element('[placeholder = "Поиск города"]').type('Томск')
@@ -43,7 +43,7 @@ def test_set_city(setup_browser):
 
 
 def test_open_page_login_im(setup_browser):
-        browser.open('https://boxberry.ru/')
+        browser.open('')
         browser.element('[type = "button"]').click()
         browser.element('.header__profile').click()
         browser.all('[class="personal-accounts__text"]').element_by(have.text('Для интернет-магазинов')).click()
