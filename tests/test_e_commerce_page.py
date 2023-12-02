@@ -1,10 +1,11 @@
-from boxberry_tests.pages.registration_page import RegistrationPage
+from boxberry_tests.pages.e_commerce_page import ECommercePage
 import allure
 from selene.support.shared import browser
 from selene import have, by
 
 def test_calculate_parcel_business_client(setup_browser):
-    browser.open('e-commerce')
+    e_commerce_page = ECommercePage()
+    e_commerce_page.open()
     browser.element('a.button.button_red').click()
    # browser.element('.multiselect__placeholder').click()
     browser.element('[class ="multiselect__tags"]').click()
@@ -21,3 +22,21 @@ def test_calculate_parcel_business_client(setup_browser):
  #   browser.element('div[class="calculator-nav__inner"] a:nth-child(2)').click()
 
 #    browser.element('.end-information1__price').should(have.text('516 '))
+
+def test_show_point(setup_browser):
+    e_commerce_page = ECommercePage()
+    e_commerce_page.open()
+    browser.element('#item-map-send > a.button.button_red').click()
+    browser.element('.city-name').click()
+    browser.element('.town-popup__list-wrap li:nth-child(4)').click()
+
+    browser.element('.city-name').should(have.text('Новосибирск'))
+
+
+def test_parcel_not_found(setup_browser):
+    e_commerce_page = ECommercePage()
+    e_commerce_page.open()
+    browser.element('[placeholder="Трек-номер"]').type('5546456565645')
+    browser.element('button.button').click()
+
+    browser.element('.empty-search-result__title').should(have.text('Номер заказа не найден'))

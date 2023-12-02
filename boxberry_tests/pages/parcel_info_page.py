@@ -6,10 +6,10 @@ from selene import have, command
 import tests
 
 
-class RetailPage:
+class ParcelInfoPage:
 
     def open(self):
-        browser.open('')
+        browser.open('castnym-klientam/dostavka/otpravit_posylku')
 
     def type_first_name(self, value):
         browser.element('#firstName').type(value)

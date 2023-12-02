@@ -35,11 +35,10 @@ def test_parcel_search(setup_browser):
         browser.element('.track-details-item__body').should(have.text('Получена информация о заказе. Отправление еще не передано на доставку в Boxberry'))
 
 
-def test_login_im(setup_browser):
+def test_password_recovery_im(setup_browser):
     browser.open('https://account.boxberry.ru/')
     browser.element('#authorizationform-email').type('ЛОГИН')
-    browser.element('.recaptcha-checkbox-border').click()
-    browser.element('.btn-auth js-login-btn').click()
+    browser.element('.login-reg__fc').click()
 
- #   browser.element('.login-reg__tab selected').should(have.text('Вход в личный кабинет'))
- #   browser.element('.login-reg__tab').should(have.text('Регистрация'))
+    browser.element('.password-recovery__h').should(have.text('Восстановление пароля'))
+
