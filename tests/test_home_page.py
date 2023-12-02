@@ -42,11 +42,11 @@ def test_set_city(setup_browser):
         browser.element('.town__link').should(have.text('Томск'))
 
 def test_open_otpr(setup_browser):
-    registration_page = RegistrationPage()
-    registration_page.open()
+    pass
 
 def test_open_page_login_im(setup_browser):
-        browser.open('')
+        registration_page = RegistrationPage()
+        registration_page.open()
         browser.element('[type = "button"]').click()
         browser.element('.header__profile').click()
         browser.all('[class="personal-accounts__text"]').element_by(have.text('Для интернет-магазинов')).click()
