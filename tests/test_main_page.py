@@ -48,5 +48,5 @@ def test_parcel_search(setup_browser):
     with allure.step('Parsel tracking'):
         main_page.parsel_tracking('ACND280139442')
 
-    with allure.step('Assert status parcel"'):
+    with allure.step('Assert status parcel'):
         main_page.status_parcel()

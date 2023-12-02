@@ -38,7 +38,7 @@ def test_parcel_not_found(setup_browser):
     with allure.step('Parsel tracking'):
         e_commerce_page.parsel_no_vaild_tracking('5546456565645')
 
-    with allure.step('Assert parcel not found"'):
+    with allure.step('Assert parcel not found'):
         e_commerce_page.assert_parcel_not_found()
 
 
