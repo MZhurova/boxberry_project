@@ -1,44 +1,52 @@
 from boxberry_tests.pages.main_page import MainPage
 import allure
-from selene.support.shared import browser
-from selene import have, by
 
 
 def test_set_city(setup_browser):
-        main_page = MainPage()
+    main_page = MainPage()
+    with allure.step('Open main page'):
         main_page.open()
-        browser.element('.town__link').click()
-        browser.all('[class="town-popup__item town-popup__item_active"]').element_by(have.text('Россия')).click()
-        browser.element('[placeholder = "Поиск города"]').type('Томск')
-        browser.element('[class="town-popup__item-city"]').click()
+    with allure.step('Select city'):
+        main_page.select_city('Томск')
 
-        browser.element('.town__link').should(have.text('Томск'))
+    with allure.step("Assert chosen city"):
+        main_page.assert_city('Томск')
 
 
 def test_open_page_login_im(setup_browser):
-        main_page = MainPage()
+    main_page = MainPage()
+    with allure.step('Open main page'):
         main_page.open()
-        browser.element('[type = "button"]').click()
-        browser.element('.header__profile').click()
-        browser.all('[class="personal-accounts__text"]').element_by(have.text('Для интернет-магазинов')).click()
-        browser.switch_to_previous_tab()
+    with allure.step('Verification city'):
+        main_page.verification_city()
+    with allure.step('View the list of personal account'):
+        main_page.view_list_personal_account()
+    with allure.step('Choosing a personal account for online stores'):
+        main_page.choose_im()
 
-        browser.element('.login-reg__tab').should(have.text('Вход в личный кабинет'))
-
-
-def test_parcel_search(setup_browser):
-        main_page = MainPage()
-        main_page.open()
-        browser.element('.field-input__inner.form-bar-desktop__input').type('ACND280139442')
-        browser.element('[aria-label="Поиск"]').click()
-
-        browser.element('.track-details-item__body').should(have.text('Получена информация о заказе. Отправление еще не передано на доставку в Boxberry'))
+    with allure.step('Assert chosen personal account'):
+        main_page.assert_personal_account()
 
 
 def test_password_recovery_im(setup_browser):
-    browser.open('https://account.boxberry.ru/')
-    browser.element('#authorizationform-email').type('ЛОГИН')
-    browser.element('.login-reg__fc').click()
+    main_page = MainPage()
+    with allure.step('Open the login page for online stores'):
+        main_page.open_page_im()
+    with allure.step('Input login'):
+        main_page.input_login_im()
+    with allure.step('Clicking "forgot password"'):
+        main_page.forgot_password()
 
-    browser.element('.password-recovery__h').should(have.text('Восстановление пароля'))
+    with allure.step('Assert open page "Password recovery"'):
+        main_page.assert_open_page_password_recovery()
 
+
+def test_parcel_search(setup_browser):
+    main_page = MainPage()
+    with allure.step('Open main page'):
+        main_page.open()
+    with allure.step('Parsel tracking'):
+        main_page.parsel_tracking('ACND280139442')
+
+    with allure.step('Assert status parcel"'):
+        main_page.status_parcel()
