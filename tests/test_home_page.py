@@ -1,4 +1,4 @@
-from demoga_tests.pages.registration_page import RegistrationPage
+from boxberry_tests.pages.registration_page import RegistrationPage
 import allure
 from selene.support.shared import browser
 from selene import have, by
