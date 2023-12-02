@@ -42,16 +42,19 @@ def test_set_city(setup_browser):
         browser.element('.town__link').should(have.text('Томск'))
 
 
-def test_login_im(setup_browser):
+def test_open_page_login_im(setup_browser):
         browser.open('https://boxberry.ru/')
-        browser.element('.town__link').click()
-        browser.all('[class="town-popup__item town-popup__item_active"]').element_by(have.text('Россия')).click()
-        browser.element('[placeholder = "Поиск города"]').type('Томск')
-        browser.element('[class="town-popup__item-city"]').click()
+        browser.element('[type = "button"]').click()
         browser.element('.header__profile').click()
         browser.all('[class="personal-accounts__text"]').element_by(have.text('Для интернет-магазинов')).click()
+        browser.switch_to_previous_tab()
 
-        browser.driver.switch_to.window('https://account.boxberry.ru/')
-        browser.element('#authorizationform-email').type('Томск')
-        browser.element('.login-reg__head').should(have.text('Вход в личный кабинет'))
-        browser.element('.login-reg__tab').should(have.text('Регистрация'))
+        browser.element('.login-reg__tab').should(have.text('Вход в личный кабинет'))
+
+
+def test_login_im(setup_browser):
+    browser.open('https://account.boxberry.ru/')
+    browser.element('#authorizationform-email').type('ЛОГИН')
+    browser.element('.login-reg').click()
+ #   browser.element('.login-reg__tab selected').should(have.text('Вход в личный кабинет'))
+    browser.element('.login-reg__tab').should(have.text('Регистрация'))
