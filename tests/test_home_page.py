@@ -43,7 +43,9 @@ def test_set_city(setup_browser):
 
 
 def test_open_page_login_im(setup_browser):
-        browser.open('')
+    registration_page = RegistrationPage()
+    registration_page.open()
+ #      browser.open('')
         browser.element('[type = "button"]').click()
         browser.element('.header__profile').click()
         browser.all('[class="personal-accounts__text"]').element_by(have.text('Для интернет-магазинов')).click()

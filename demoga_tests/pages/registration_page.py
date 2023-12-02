@@ -9,7 +9,8 @@ import tests
 class RegistrationPage:
 
     def open(self):
-        browser.open('/automation-practice-form')
+ #       browser.open('/automation-practice-form')
+        browser.open('/castnym-klientam/dostavka/otpravit_posylku')
 
     def type_first_name(self, value):
         browser.element('#firstName').type(value)
