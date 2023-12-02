@@ -1,6 +1,6 @@
 import pytest
 import os
-from selene.support.shared import browser
+from selene import browser
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from dotenv import load_dotenv
@@ -28,11 +28,12 @@ def setup_browser(request):
     login = os.getenv('LOGIN')
     password = os.getenv('PASSWORD')
     browser_url = os.getenv('DEFAULT_BROWSER_URL')
+
     driver = webdriver.Remote(
         command_executor=f"https://{login}:{password}@{browser_url}",
         options=options
     )
-
+    browser.config.driver = driver
     browser.config.base_url = "https://boxberry.ru/"
 #    browser.config.base_url = "https://demoqa.com"
     browser.config.window_width = 1920
