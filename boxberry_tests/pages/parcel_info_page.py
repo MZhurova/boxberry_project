@@ -1,60 +1,27 @@
-from pathlib import Path
-
 from selene.support.shared import browser
-from selene import have, command
-
-import tests
-
+from selene import have
 
 class ParcelInfoPage:
 
     def open(self):
         browser.open('castnym-klientam/dostavka/otpravit_posylku')
 
-    def type_first_name(self, value):
-        browser.element('#firstName').type(value)
+    def calculate_parcel(self, city_start, city_finish):
+        browser.element('.cta__button').click()
+        browser.element('[name="sender"]').type(city_start)
+        browser.element('[name="receiver"]').type(city_finish)
+        browser.element('[name="publicPrice"]').type('0')
+        browser.element('[data-handler="renderPackagesList"]').click()
+        browser.element('[data-value="5"]').click()
+        browser.element('#select-package').click()
+        browser.element('[value="Рассчитать"]').click()
 
-    def type_last_name(self, value):
-        browser.element('#lastName').type(value)
+    def delivery_cost(self, value):
+        browser.element('.end-information1__price').should(have.text(value))
 
-    def type_email(self, value):
-        browser.element('#userEmail').type(value)
+    def click_how_receive_parsel(self):
+        browser.driver.execute_script("window.scrollTo(0, 1080)")
+        browser.element('div.col-12.col-sm-auto  > .cta__button').click()
 
-    def type_fhone_nomber(self, value):
-        browser.element('#userNumber').type(value)
-
-    def type_date_of_birth(self, year, month, day):
-        browser.element('#dateOfBirthInput').click()
-        browser.element('[class="react-datepicker__month-select"]').click().element(f'option[value="{month}"]').click()
-        browser.element('[class="react-datepicker__year-select"]').click().element(f'option[value="{year}"]').click()
-        browser.element(f'.react-datepicker__day--0{day}').click()
-
-    def submit(self):
-        browser.element('#submit').perform(command.js.click)
-
-    def type_gender(self):
-        browser.element('label[for="gender-radio-2"]').click()
-
-    def type_subjects(self, value):
-        browser.element('#subjectsInput').type(value).press_enter()
-
-    def type_hobbies(self):
-        browser.element('label[for="hobbies-checkbox-1"]').click()
-
-    def type_picture(self, value):
-        browser.element('#uploadPicture').set_value(str(Path(tests.__file__).parent.joinpath(f'image/{value}').absolute()
-    ))
-
-    def type_address(self, value):
-        browser.element('#currentAddress').type(value)
-
-    def type_state(self, value):
-        browser.element('#react-select-3-input').type(value).press_enter()
-
-    def type_city(self, value):
-        browser.element('#react-select-4-input').type(value).press_enter()
-
-    def assert_registred_date(self, full_name, email, gender, fhone_nomber, date_of_birth, subjects, hobbies, picture, address, state_and_city):
-        browser.element('.table-responsive').all('td:nth-child(2)').should(
-            have.texts(full_name, email, gender, fhone_nomber, date_of_birth, subjects, hobbies,
-               picture, address, state_and_city))
+    def assert_text_on_page_how_receive_parsel(self):
+        browser.element('.pageTitle__title').should(have.text('Получить посылку'))
