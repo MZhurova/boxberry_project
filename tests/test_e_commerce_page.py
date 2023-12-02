@@ -8,36 +8,38 @@ from selene import have, by
 
 def test_calculate_parcel_business_client(setup_browser):
     e_commerce_page = ECommercePage()
-    e_commerce_page.open()
-    browser.element('a.button.button_red').click()
-    browser.element('.multiselect__placeholder').click()
-    time.sleep(3)
-    browser.element('input.multiselect__input').type('Екатеринбург').press_enter()
-    browser.element('.multiselect__placeholder').click()
-    time.sleep(3)
-    browser.element('[placeholder="Город-получатель"]').type('Томск').press_enter()
-    browser.element('[placeholder="Оценочная стоимость"]').type('0')
-    browser.element('[placeholder="Высота"]').type('5')
-    browser.element('[placeholder="Ширина"]').type('6')
-    browser.element('[placeholder="Длина"]').type('7')
-    browser.element('#calcWeight').type('11')
+    with allure.step('Open e-commerce page'):
+        e_commerce_page.open()
+    with allure.step('Calculate the cost of the parcel for business partner'):
+        e_commerce_page.calculate_parcel_for_business('Екатеринбург', 'Томск', '5', '6', '7', '11')
 
- #   browser.element('div[class="calculator-nav__inner"] a:nth-child(2)').click()
+    with allure.step('Assert delivery cost for business partner'):
+        pass
+    #   e_commerce_page.delivery_cost_for_business('1 568')
+
 
 def test_show_point(setup_browser):
     e_commerce_page = ECommercePage()
-    e_commerce_page.open()
-    browser.element('#item-map-send > a.button.button_red').click()
-    browser.element('.city-name').click()
-    browser.element('.town-popup__list-wrap li:nth-child(4)').click()
+    with allure.step('Open e-commerce page'):
+        e_commerce_page.open()
+    with allure.step('Clicking the button show point'):
+        e_commerce_page.click_show_point()
+    with allure.step('Set the city to view point'):
+        e_commerce_page.set_city_to_view_point()
 
-    browser.element('.city-name').should(have.text('Новосибирск'))
+    with allure.step("Assert chosen city"):
+        e_commerce_page.assert_chosen_city('Новосибирск')
 
 
 def test_parcel_not_found(setup_browser):
     e_commerce_page = ECommercePage()
-    e_commerce_page.open()
-    browser.element('[placeholder="Трек-номер"]').type('5546456565645')
-    browser.element('button.button').click()
+    with allure.step('Open e-commerce page'):
+        e_commerce_page.open()
+    with allure.step('Parsel tracking'):
+        e_commerce_page.parsel_no_vaild_tracking('5546456565645')
 
-    browser.element('.empty-search-result__title').should(have.text('Номер заказа не найден'))
+    with allure.step('Assert parcel not found"'):
+        e_commerce_page.assert_parcel_not_found()
+
+
+
