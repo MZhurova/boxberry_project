@@ -14,8 +14,7 @@ def test_calculate_parcel_business_client(setup_browser):
         e_commerce_page.calculate_parcel_for_business('Екатеринбург', 'Томск', '5', '6', '7', '11')
 
     with allure.step('Assert delivery cost for business partner'):
-        pass
-    #   e_commerce_page.delivery_cost_for_business('1 568')
+        e_commerce_page.delivery_cost_for_business('1 568')
 
 
 def test_show_point(setup_browser):
@@ -40,6 +39,3 @@ def test_parcel_not_found(setup_browser):
 
     with allure.step('Assert parcel not found'):
         e_commerce_page.assert_parcel_not_found()
-
-
-

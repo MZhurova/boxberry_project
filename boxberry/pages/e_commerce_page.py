@@ -10,6 +10,7 @@ class ECommercePage:
         browser.element('.modal-new-year__btn_cancel').click()
 
     def calculate_parcel_for_business(self, start_city, finish_city, height, length, width, weight):
+        time.sleep(3)
         browser.element('a.button.button_red').click()
         browser.element('.multiselect__placeholder').click()
         time.sleep(3)
@@ -22,12 +23,12 @@ class ECommercePage:
         browser.element('[placeholder="Ширина"]').type(length)
         browser.element('[placeholder="Длина"]').type(width)
         browser.element('#calcWeight').type(weight)
-
-    #   browser.element('div[class="calculator-nav__inner"] a:nth-child(2)').click()
+        time.sleep(3)
+        browser.element('#calculator > ul > div:nth-child(2) > div > a.calculator__button').click()
+        browser.element('.calculator-total__cost').should(have.text('1 568'))
 
     def delivery_cost_for_business(self, value):
-        #    browser.element('.calculator-total__cost').should(have.text(value))
-        pass
+        browser.element('.calculator-total__cost').should(have.text(value))
 
     def click_show_point(self):
         browser.element('#item-map-send > a.button.button_red').click()
