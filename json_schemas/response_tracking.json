@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "track_id": {
+          "type": "string"
+        },
+        "NameIM": {
+          "type": "string"
+        },
+        "ProgramNumber": {
+          "type": "string"
+        },
+        "order_id": {
+          "type": "string"
+        },
+        "Weight": {
+          "type": "string"
+        },
+        "delivery_type": {
+          "type": "string"
+        },
+        "ForingParcel": {
+          "type": "string"
+        },
+        "point_city": {
+          "type": "string"
+        },
+        "point_address": {
+          "type": "string"
+        },
+        "point_phone": {
+          "type": "string"
+        },
+        "Code": {
+          "type": "string"
+        },
+        "imCode": {
+          "type": "string"
+        },
+        "issueType": {
+          "type": "string"
+        },
+        "payType": {
+          "type": "string"
+        },
+        "issueCondition": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "deliveryIntervalStart": {
+          "type": "string"
+        },
+        "deliveryIntervalFin": {
+          "type": "string"
+        },
+        "sum": {
+          "type": "string"
+        },
+        "shouldChangeOdp": {
+          "type": "string"
+        },
+        "allowCDChange": {
+          "type": "string"
+        },
+        "allowStorageDateChange": {
+          "type": "string"
+        },
+        "lastUpdateDate": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "track_id",
+        "NameIM",
+        "ProgramNumber",
+        "order_id",
+        "Weight",
+        "delivery_type",
+        "ForingParcel",
+        "point_city",
+        "point_address",
+        "point_phone",
+        "Code",
+        "imCode",
+        "issueType",
+        "payType",
+        "issueCondition",
+        "status",
+        "deliveryIntervalStart",
+        "deliveryIntervalFin",
+        "sum",
+        "shouldChangeOdp",
+        "allowCDChange",
+        "allowStorageDateChange",
+        "lastUpdateDate"
+      ]
+    }
+  ]
+}
