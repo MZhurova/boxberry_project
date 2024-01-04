@@ -8,11 +8,9 @@ import allure
 from allure_commons._allure import step
 from allure_commons.types import AttachmentType
 
-WEB_URL = "https://boxberry.ru"
 
-
-def test_get_list_country_and_city():
-    url = WEB_URL + "/api/v1/cities/list"
+def test_get_list_country_and_city(api_url):
+    url = f'{api_url}/api/v1/cities/list'
 
     result: Response = requests.get(url)
 
@@ -20,6 +18,10 @@ def test_get_list_country_and_city():
 
     with step("API Request"):
         result = requests.get(url)
+        allure.attach(body=result.request.url, name="Request url",
+                      attachment_type=AttachmentType.TEXT)
+        allure.attach(body=json.dumps(result.request.body, indent=4, ensure_ascii=True), name="Request body",
+                      attachment_type=AttachmentType.JSON, extension="json")
         allure.attach(body=json.dumps(result.json(), indent=4, ensure_ascii=True), name="Response",
                       attachment_type=AttachmentType.JSON, extension="json")
         logging.info(result.request.url)
@@ -27,8 +29,8 @@ def test_get_list_country_and_city():
         logging.info(result.text)
 
 
-def test_get_daily():
-    url = WEB_URL + "/api/v1/cbr/daily"
+def test_get_daily(api_url):
+    url = f'{api_url}/api/v1/cbr/daily'
     schema = load_schema("response_daily.json")
 
     result: Response = requests.get(url)
@@ -46,10 +48,10 @@ def test_get_daily():
         logging.info(result.text)
 
 
-def test_get_city():
+def test_get_city(api_url):
     cityCode = 57
     perPage = 10
-    url = WEB_URL + "/api/v1/odp?"
+    url = f'{api_url}/api/v1/odp?'
     schema = load_schema("response_city.json")
 
     result = requests.get(
@@ -70,8 +72,8 @@ def test_get_city():
     print(result.text)
 
 
-def test_get_city2():
-    url = WEB_URL + "/api/v1/odp?cityCode=57&perPage=10"
+def test_get_city2(api_url):
+    url = f'{api_url}/api/v1/odp?cityCode=57&perPage=10'
     schema = load_schema("response_city.json")
 
     result = requests.get(url)

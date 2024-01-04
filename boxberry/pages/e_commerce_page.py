@@ -11,7 +11,8 @@ class ECommercePage:
 
     def calculate_parcel_for_business(self, start_city, finish_city, height, length, width, weight):
         time.sleep(3)
-        browser.element('a.button.button_red').click()
+        browser.element('#item-calculator > a').click()
+        time.sleep(3)
         browser.element('.multiselect__placeholder').click()
         time.sleep(3)
         browser.element('input.multiselect__input').type(start_city).press_enter()

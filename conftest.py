@@ -13,6 +13,11 @@ def load_env():
     load_dotenv()
 
 
+@pytest.fixture
+def api_url():
+    return 'https://boxberry.ru'
+
+
 @pytest.fixture(scope='function')
 def setup_browser(request):
     options = Options()
