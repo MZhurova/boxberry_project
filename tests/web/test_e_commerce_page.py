@@ -1,6 +1,6 @@
 import time
 
-from boxberry_tests.pages.e_commerce_page import ECommercePage
+from boxberry.pages.e_commerce_page import ECommercePage
 import allure
 from selene.support.shared import browser
 from selene import have, by

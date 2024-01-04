@@ -1,4 +1,4 @@
-from boxberry_tests.pages.main_page import MainPage
+from boxberry.pages.main_page import MainPage
 import allure
 
 

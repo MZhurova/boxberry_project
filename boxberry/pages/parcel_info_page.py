@@ -5,6 +5,7 @@ class ParcelInfoPage:
 
     def open(self):
         browser.open('castnym-klientam/dostavka/otpravit_posylku')
+        browser.element('.modal-new-year__btn_cancel').click()
 
     def calculate_parcel(self, city_start, city_finish):
         browser.element('.cta__button').click()

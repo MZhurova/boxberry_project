@@ -3,11 +3,11 @@ from selene import have, command
 import time
 
 
-
 class ECommercePage:
 
     def open(self):
         browser.open('e-commerce')
+        browser.element('.modal-new-year__btn_cancel').click()
 
     def calculate_parcel_for_business(self, start_city, finish_city, height, length, width, weight):
         browser.element('a.button.button_red').click()
@@ -22,10 +22,11 @@ class ECommercePage:
         browser.element('[placeholder="Ширина"]').type(length)
         browser.element('[placeholder="Длина"]').type(width)
         browser.element('#calcWeight').type(weight)
+
     #   browser.element('div[class="calculator-nav__inner"] a:nth-child(2)').click()
 
     def delivery_cost_for_business(self, value):
-    #    browser.element('.calculator-total__cost').should(have.text(value))
+        #    browser.element('.calculator-total__cost').should(have.text(value))
         pass
 
     def click_show_point(self):

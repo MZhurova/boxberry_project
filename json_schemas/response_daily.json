@@ -1,0 +1,195 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "exchange_rate": {
+          "type": "number"
+        },
+        "quantity": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "numeric_code": {
+          "type": "string"
+        },
+        "symbol_code": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "exchange_rate",
+        "quantity",
+        "name",
+        "numeric_code",
+        "symbol_code"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "exchange_rate": {
+          "type": "number"
+        },
+        "quantity": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "numeric_code": {
+          "type": "string"
+        },
+        "symbol_code": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "exchange_rate",
+        "quantity",
+        "name",
+        "numeric_code",
+        "symbol_code"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "exchange_rate": {
+          "type": "number"
+        },
+        "quantity": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "numeric_code": {
+          "type": "string"
+        },
+        "symbol_code": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "exchange_rate",
+        "quantity",
+        "name",
+        "numeric_code",
+        "symbol_code"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "exchange_rate": {
+          "type": "number"
+        },
+        "quantity": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "numeric_code": {
+          "type": "string"
+        },
+        "symbol_code": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "exchange_rate",
+        "quantity",
+        "name",
+        "numeric_code",
+        "symbol_code"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "exchange_rate": {
+          "type": "number"
+        },
+        "quantity": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "numeric_code": {
+          "type": "string"
+        },
+        "symbol_code": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "exchange_rate",
+        "quantity",
+        "name",
+        "numeric_code",
+        "symbol_code"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "exchange_rate": {
+          "type": "number"
+        },
+        "quantity": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "numeric_code": {
+          "type": "string"
+        },
+        "symbol_code": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "exchange_rate",
+        "quantity",
+        "name",
+        "numeric_code",
+        "symbol_code"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "exchange_rate": {
+          "type": "number"
+        },
+        "quantity": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "numeric_code": {
+          "type": "string"
+        },
+        "symbol_code": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "exchange_rate",
+        "quantity",
+        "name",
+        "numeric_code",
+        "symbol_code"
+      ]
+    }
+  ]
+}

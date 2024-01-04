@@ -1,5 +1,5 @@
 import allure
-from boxberry_tests.pages.parcel_info_page import ParcelInfoPage
+from boxberry.pages.parcel_info_page import ParcelInfoPage
 
 
 def test_calculate_parcel_retail_client(setup_browser):

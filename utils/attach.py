@@ -1,6 +1,8 @@
 import allure
 from allure_commons.types import AttachmentType
-
+import json
+import os
+from pathlib import Path
 
 def add_screenshot(browser):
     png = browser.driver.get_screenshot_as_png()
@@ -23,3 +25,9 @@ def add_video(browser):
            + video_url \
            + "' type='video/mp4'></video></body></html>"
     allure.attach(html, 'video_' + browser.driver.session_id, AttachmentType.HTML, '.html')
+
+
+def load_schema(filepath):
+    with open(os.path.dirname(os.path.abspath(Path(__file__).parent)) + '/json_schemas/' + filepath) as file:
+        schema = json.load(file)
+        return schema

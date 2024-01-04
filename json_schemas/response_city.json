@@ -1,0 +1,4710 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "odp": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "geo": {
+              "type": "object",
+              "properties": {
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "latitude",
+                "longitude"
+              ]
+            },
+            "acquiring": {
+              "type": "boolean"
+            },
+            "cityCode": {
+              "type": "string"
+            },
+            "courierDelivery": {
+              "type": "boolean"
+            },
+            "fitting": {
+              "type": "boolean"
+            },
+            "fittingType": {
+              "type": "integer"
+            },
+            "interRefunds": {
+              "type": "boolean"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "photos": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "preview": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "thumbnail": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "preview",
+                    "src",
+                    "thumbnail"
+                  ]
+                }
+              ]
+            },
+            "reception": {
+              "type": "boolean"
+            },
+            "receptionLap": {
+              "type": "boolean"
+            },
+            "deliveryLap": {
+              "type": "boolean"
+            },
+            "tripDescription": {
+              "type": "string"
+            },
+            "expressReception": {
+              "type": "boolean"
+            },
+            "terminal": {
+              "type": "boolean"
+            },
+            "issuanceBoxberry": {
+              "type": "boolean"
+            },
+            "cash_payment": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "address",
+            "geo",
+            "acquiring",
+            "cityCode",
+            "courierDelivery",
+            "fitting",
+            "fittingType",
+            "interRefunds",
+            "phone",
+            "photos",
+            "reception",
+            "receptionLap",
+            "deliveryLap",
+            "tripDescription",
+            "expressReception",
+            "terminal",
+            "issuanceBoxberry",
+            "cash_payment"
+          ]
+        }
+      ]
+    },
+    "pager": {
+      "type": "object",
+      "properties": {
+        "firstPage": {
+          "type": "integer"
+        },
+        "lastPage": {
+          "type": "integer"
+        },
+        "nbResults": {
+          "type": "integer"
+        },
+        "page": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "firstPage",
+        "lastPage",
+        "nbResults",
+        "page"
+      ]
+    }
+  },
+  "required": [
+    "odp",
+    "pager"
+  ]
+}

@@ -10,6 +10,7 @@ class MainPage:
 
     def open(self):
         browser.open('')
+        browser.element('.modal-new-year__btn_cancel').click()
 
     def select_city(self, city):
         browser.element('.town__link').click()
