@@ -1,9 +1,12 @@
-#-*- coding:utf-8 -*-
 import allure
 from allure_commons.types import AttachmentType
 import json
 import os
 from pathlib import Path
+import requests
+import logging
+from allure_commons._allure import step
+
 
 def add_screenshot(browser):
     png = browser.driver.get_screenshot_as_png()
@@ -29,7 +32,27 @@ def add_video(browser):
 
 
 def load_schema(filepath):
-    with open((os.path.dirname(os.path.abspath(Path(__file__).parent)) + '/json_schemas_and_body/' + filepath), 'r', encoding="utf-8") as file:
+    with open((os.path.dirname(os.path.abspath(Path(__file__).parent)) + '/json_schemas_and_body/' + filepath), 'r',
+              encoding="utf-8") as file:
         schema = json.load(file)
         return schema
 
+
+def boxberry_api_get(url, **kwargs):
+    with step("API Request"):
+        result = requests.get(f'{url}', **kwargs)
+
+        allure.attach(body=result.request.url, name="Request url",
+                      attachment_type=AttachmentType.TEXT)
+        allure.attach(body=json.dumps(result.request.body, indent=4, ensure_ascii=True), name="Request body",
+                      attachment_type=AttachmentType.JSON, extension="json")
+        allure.attach(body=json.dumps(result.json(), indent=4, ensure_ascii=False), name="Response",
+                      attachment_type=AttachmentType.JSON, extension="json")
+
+        logging.info("Request: " + result.request.url)
+        if result.request.body:
+            logging.info("INFO Request body: " + result.request.body)
+        logging.info("Request headers: " + str(result.request.headers))
+        logging.info("Response code " + str(result.status_code))
+        logging.info("Response: " + result.text)
+    return result

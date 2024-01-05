@@ -1,5 +1,6 @@
 from selene.support.shared import browser
 from selene import have
+import time
 
 class ParcelInfoPage:
 

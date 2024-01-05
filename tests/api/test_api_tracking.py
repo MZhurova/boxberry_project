@@ -1,0 +1,41 @@
+import jsonschema
+from utils.attach import load_schema, boxberry_api_get
+
+
+def test_api_tracking_successfully(api_url):
+    searchId = '5555'
+    url = f'{api_url}/api/v1/tracking/order/get'
+    schema = load_schema("response_tracking.json")
+
+    result = boxberry_api_get(
+        url=url,
+        params={"searchId": searchId}
+    )
+
+    assert result.status_code == 200
+    jsonschema.validate(result.json(), schema)
+
+
+def test_api_tracking_faund_searchid(api_url):
+    searchId = 'ACND280139442'
+    url = f'{api_url}/api/v1/tracking/order/get'
+
+    result = boxberry_api_get(
+        url=url,
+        params={"searchId": searchId}
+    )
+
+    assert result.json()[0]["ProgramNumber"] == searchId
+
+
+def test_api_tracking_not_found(api_url):
+    searchId = 'fffftttttttttttt'
+    url = f'{api_url}/api/v1/tracking/order/get'
+
+    result = boxberry_api_get(
+        url=url,
+        params={"searchId": searchId}
+    )
+
+    assert result.status_code == 200
+    assert result.json() == []
