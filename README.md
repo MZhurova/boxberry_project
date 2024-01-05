@@ -30,7 +30,20 @@
 ----
 ### Проект реализован с использованием:
 
-<img src="design/icons/python-original.svg" width="50" title="Python"> <img src="design/icons/pytest.png" width="50" title="Pytest"> <img src="design/icons/github.svg" width="50" title="GitHub"> <img src="design/icons/intellij_pycharm.png" width="50" title="PyCharm"> <img src="design/icons/selene.png" width="50" title="Selene"> <img src="design/icons/selenium.png" width="50" title="Selenium"> <img src="design/icons/selenoid.png" width="50" title="Selenoid"> <img src="design/icons/jenkins.png" width="50" title="Jenkins"> <img src="design/icons/allure_report.png" width="50" title="Allure Report"> <img src="design/icons/allure_testops.png" width="50" title="Allure TestOps"> <img src="design/icons/telegram.png" width="50" title="Telegram">  <img src="design/icons/jira.svg" width="50" title="Jira">
+<img src="design/icons/python-original.svg" width="50" title="Python">
+<img src="design/icons/pytest.png" width="50" title="Pytest"> 
+<img src="design/icons/github.svg" width="50" title="GitHub"> 
+<img src="design/icons/intellij_pycharm.png" width="50" title="PyCharm">
+<img src="design/icons/selene.png" width="50" title="Selene">
+<img src="design/icons/selenium.png" width="50" title="Selenium">
+<img src="design/icons/requests.png" width="40" title="Requests">
+<img src="design/icons/selenoid.png" width="50" title="Selenoid">
+<img src="design/icons/jenkins.png" width="50" title="Jenkins">
+<img src="design/icons/allure_report.png" width="50" title="Allure Report">
+<img src="design/icons/allure_testops.png" width="50" title="Allure TestOps">
+<img src="design/icons/telegram.png" width="50" title="Telegram">
+<img src="design/icons/jira.svg" width="50" title="Jira">
+
 
 ----
 
