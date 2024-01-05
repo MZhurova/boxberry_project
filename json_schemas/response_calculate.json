@@ -1,0 +1,675 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "integer"
+    },
+    "err": {
+      "type": "array",
+      "items": {}
+    },
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "delivery_type": {
+              "type": "integer"
+            },
+            "cd_price": {
+              "type": "integer"
+            },
+            "cost": {
+              "type": "integer"
+            },
+            "base": {
+              "type": "integer"
+            },
+            "discount": {
+              "type": "integer"
+            },
+            "default_services_cost": {
+              "type": "integer"
+            },
+            "services_cost": {
+              "type": "integer"
+            },
+            "services": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                }
+              ]
+            },
+            "return_cost": {
+              "type": "integer"
+            },
+            "time": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "delivery_type",
+            "cd_price",
+            "cost",
+            "base",
+            "discount",
+            "default_services_cost",
+            "services_cost",
+            "services",
+            "return_cost",
+            "time"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "delivery_type": {
+              "type": "integer"
+            },
+            "cd_price": {
+              "type": "integer"
+            },
+            "cost": {
+              "type": "integer"
+            },
+            "base": {
+              "type": "integer"
+            },
+            "discount": {
+              "type": "integer"
+            },
+            "default_services_cost": {
+              "type": "integer"
+            },
+            "services_cost": {
+              "type": "integer"
+            },
+            "services": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                }
+              ]
+            },
+            "return_cost": {
+              "type": "integer"
+            },
+            "time": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "delivery_type",
+            "cd_price",
+            "cost",
+            "base",
+            "discount",
+            "default_services_cost",
+            "services_cost",
+            "services",
+            "return_cost",
+            "time"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "delivery_type": {
+              "type": "integer"
+            },
+            "cd_price": {
+              "type": "integer"
+            },
+            "cost": {
+              "type": "integer"
+            },
+            "base": {
+              "type": "integer"
+            },
+            "discount": {
+              "type": "integer"
+            },
+            "default_services_cost": {
+              "type": "integer"
+            },
+            "services_cost": {
+              "type": "integer"
+            },
+            "services": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                }
+              ]
+            },
+            "return_cost": {
+              "type": "integer"
+            },
+            "time": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "delivery_type",
+            "cd_price",
+            "cost",
+            "base",
+            "discount",
+            "default_services_cost",
+            "services_cost",
+            "services",
+            "return_cost",
+            "time"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "delivery_type": {
+              "type": "integer"
+            },
+            "cd_price": {
+              "type": "integer"
+            },
+            "cost": {
+              "type": "integer"
+            },
+            "base": {
+              "type": "integer"
+            },
+            "discount": {
+              "type": "integer"
+            },
+            "default_services_cost": {
+              "type": "integer"
+            },
+            "services_cost": {
+              "type": "integer"
+            },
+            "services": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "name",
+                    "cost"
+                  ]
+                }
+              ]
+            },
+            "return_cost": {
+              "type": "integer"
+            },
+            "time": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "delivery_type",
+            "cd_price",
+            "cost",
+            "base",
+            "discount",
+            "default_services_cost",
+            "services_cost",
+            "services",
+            "return_cost",
+            "time"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "err",
+    "data"
+  ]
+}

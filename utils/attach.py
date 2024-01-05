@@ -1,3 +1,4 @@
+#-*- coding:utf-8 -*-
 import allure
 from allure_commons.types import AttachmentType
 import json
@@ -28,6 +29,7 @@ def add_video(browser):
 
 
 def load_schema(filepath):
-    with open(os.path.dirname(os.path.abspath(Path(__file__).parent)) + '/json_schemas/' + filepath) as file:
+    with open((os.path.dirname(os.path.abspath(Path(__file__).parent)) + '/json_schemas/' + filepath), 'r', encoding="utf-8") as file:
         schema = json.load(file)
         return schema
+
