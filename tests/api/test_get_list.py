@@ -1,4 +1,5 @@
 import jsonschema
+import pytest
 import requests
 from utils.attach import load_schema
 import json
@@ -44,6 +45,7 @@ def test_get_list_country_and_city(api_url):
 def test_get_daily(api_url):
     url = f'{api_url}/api/v1/cbr/daily'
     schema = load_schema("response_daily.json")
+    file = load_schema("daily_body.json")
 
     result = boxberry_api_get(f'{url}',
                               headers={'Cookie': 'sticky_cookie=http://boxberry-app-1.ru-central1.internal'})
@@ -51,6 +53,7 @@ def test_get_daily(api_url):
     assert result.status_code == 200
     jsonschema.validate(result.json(), schema)
     assert len(result.json()[0]) == 5
+    assert file == result.json()
 
 
 def test_get_city(api_url):
@@ -68,6 +71,20 @@ def test_get_city(api_url):
     assert result.json()["odp"][0]["cityCode"] == str(cityCode)
     assert len(result.json()['odp']) == perPage
     jsonschema.validate(result.json(), schema)
+
+@pytest.mark.parametrize('cityCode', [57, 19, 22, 44])
+def test_get_city_parametrize(api_url, cityCode):
+    url = f'{api_url}/api/v1/odp?'
+    schema = load_schema("response_city.json")
+
+    result = boxberry_api_get(
+        url=url,
+        params={"cityCode": cityCode}
+    )
+
+    assert result.status_code == 200
+    assert result.json()["odp"][0]["cityCode"] == str(cityCode)
+    print(result.json())
 
 
 def test_get_tracking(api_url):
@@ -114,16 +131,11 @@ def test_get_calculator(api_url):
            f'package[depth]=2'
            )
     schema = load_schema("response_calculate.json")
-    file = load_schema("rrr.json")
+    file = load_schema("calculate_body.json")
     result = boxberry_api_get(url=url)
 
     assert result.status_code == 200
     assert result.json()["status"] == 1
     assert result.json()["data"][0]["default_services_cost"] == 56300
     jsonschema.validate(result.json(), schema)
-    print("///////////////")
-    print(result.json())
-    print("///////////////")
-    print(file)
-    print("///////////////")
     assert result.json() == file

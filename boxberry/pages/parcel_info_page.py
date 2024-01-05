@@ -8,6 +8,7 @@ class ParcelInfoPage:
         browser.element('.modal-new-year__btn_cancel').click()
 
     def calculate_parcel(self, city_start, city_finish):
+        time.sleep(3)
         browser.element('.cta__button').click()
         browser.element('[name="sender"]').type(city_start)
         browser.element('[name="receiver"]').type(city_finish)
