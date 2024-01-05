@@ -1,3 +1,4 @@
+import allure
 import jsonschema
 from utils.attach import load_schema, boxberry_api_get
 
@@ -19,10 +20,12 @@ def test_api_calculator_successfully(api_url):
            )
     schema = load_schema("response_calculate.json")
 
-    result = boxberry_api_get(url=url)
+    with allure.step('Make a request'):
+        result = boxberry_api_get(url=url)
 
-    assert result.status_code == 200
-    jsonschema.validate(result.json(), schema)
+    with allure.step('Assert the result'):
+        assert result.status_code == 200
+        jsonschema.validate(result.json(), schema)
 
 
 def test_api_calculator_match_body(api_url):
@@ -42,9 +45,11 @@ def test_api_calculator_match_body(api_url):
            )
     file = load_schema("calculate_body.json")
 
-    result = boxberry_api_get(url=url)
+    with allure.step('Make a request'):
+        result = boxberry_api_get(url=url)
 
-    assert result.json() == file
+    with allure.step('Assert the result'):
+        assert result.json() == file
 
 
 def test_api_calculator_services_cost(api_url):
@@ -63,10 +68,12 @@ def test_api_calculator_services_cost(api_url):
            f'package[depth]=2'
            )
 
-    result = boxberry_api_get(url=url)
+    with allure.step('Make a request'):
+        result = boxberry_api_get(url=url)
 
-    assert result.json()["status"] == 1
-    assert result.json()["data"][0]["default_services_cost"] == 51850
+    with allure.step('Assert the result'):
+        assert result.json()["status"] == 1
+        assert result.json()["data"][0]["default_services_cost"] == 51850
 
 
 def test_api_calculator_bad_request(api_url):
@@ -86,8 +93,10 @@ def test_api_calculator_bad_request(api_url):
            )
     schema = load_schema("response_calculate_bad_request.json")
 
-    result = boxberry_api_get(url=url)
+    with allure.step('Make a request'):
+        result = boxberry_api_get(url=url)
 
-    assert result.status_code == 400
-    jsonschema.validate(result.json(), schema)
-    assert result.json()["error"] == True
+    with allure.step('Assert the result'):
+        assert result.status_code == 400
+        jsonschema.validate(result.json(), schema)
+        assert result.json()["error"] == True

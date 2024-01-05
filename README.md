@@ -3,6 +3,7 @@
 ![This is an image](design/images/logo-boxberry.png)
 
 ----
+## *UI-тесты*
 ### Список проверок, реализованных для главной страницы
 #### Auto Tests
 - [x] *Установка города. Проверка, что установился выбранный город*
@@ -25,25 +26,37 @@
 - [x] *Поиск отделений, где доступен "Экспресс-прием"*
 - [x] *Поиск отделений, где доступен "Прием на терминале"*
 
+## *API-тесты*
+### Список проверок, реализованных для методов
+- [x] *Получение успешных статус кодов и валидация ответов по схемам*
+- [x] *Полное сравнение ответа с эталонным файлами*
+- [x] *Запросы с несколькими параметрами*
+- [x] *Параметризованные тесты с несколькими аргументами*
+- [x] *Получение пустого массива*
+- [x] *Получение ошибки при неверном запросе*
+- [x] *Проверка полученных массивов на длину*
+
+
+
 ![This is an image](design/images/man.png)
 
 ----
 ### Проект реализован с использованием:
-
-<img src="design/icons/python-original.svg" width="50" title="Python">
-<img src="design/icons/pytest.png" width="50" title="Pytest"> 
-<img src="design/icons/github.svg" width="50" title="GitHub"> 
-<img src="design/icons/intellij_pycharm.png" width="50" title="PyCharm">
-<img src="design/icons/selene.png" width="50" title="Selene">
-<img src="design/icons/selenium.png" width="50" title="Selenium">
-<img src="design/icons/requests.png" width="40" title="Requests">
-<img src="design/icons/selenoid.png" width="50" title="Selenoid">
-<img src="design/icons/jenkins.png" width="50" title="Jenkins">
-<img src="design/icons/allure_report.png" width="50" title="Allure Report">
-<img src="design/icons/allure_testops.png" width="50" title="Allure TestOps">
-<img src="design/icons/telegram.png" width="50" title="Telegram">
-<img src="design/icons/jira.svg" width="50" title="Jira">
-
+<p  align="center">
+    <code><img src="design/icons/python-original.svg" width="50" title="Python"></code>
+    <code><img src="design/icons/pytest.png" width="50" title="Pytest"></code> 
+    <code><img src="design/icons/github.svg" width="50" title="GitHub"></code> 
+    <code><img src="design/icons/intellij_pycharm.png" width="50" title="PyCharm"></code>
+    <code><img src="design/icons/selene.png" width="50" title="Selene"></code>
+    <code><img src="design/icons/selenium.png" width="50" title="Selenium"></code>
+    <code><img src="design/icons/requests.png" width="40" title="Requests"></code>
+    <code><img src="design/icons/selenoid.png" width="50" title="Selenoid"></code>
+    <code><img src="design/icons/jenkins.png" width="50" title="Jenkins"></code>
+    <code><img src="design/icons/allure_report.png" width="50" title="Allure Report"></code>
+    <code><img src="design/icons/allure_testops.png" width="50" title="Allure TestOps"></code>
+    <code><img src="design/icons/telegram.png" width="50" title="Telegram"></code>
+    <code><img src="design/icons/jira.svg" width="50" title="Jira"></code>
+</p>
 
 ----
 
