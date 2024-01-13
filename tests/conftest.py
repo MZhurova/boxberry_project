@@ -4,7 +4,7 @@ from selene import browser
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from dotenv import load_dotenv
-from utils import attach
+from boxberry_project_tests.utils import attach
 
 
 @pytest.fixture(scope='session', autouse=True)

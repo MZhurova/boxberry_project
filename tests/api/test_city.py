@@ -1,7 +1,7 @@
 import allure
 import jsonschema
 import pytest
-from utils.attach import load_schema, boxberry_api_get
+from boxberry_project_tests.utils import load_schema, boxberry_api_get
 
 
 def test_city_successfully(api_url):
