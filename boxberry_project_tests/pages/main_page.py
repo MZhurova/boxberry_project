@@ -1,9 +1,4 @@
-from pathlib import Path
-
-from selene.support.shared import browser
-from selene import have, command
-
-import tests
+from selene import browser, have
 
 
 class MainPage:
@@ -14,9 +9,9 @@ class MainPage:
 
     def select_city(self, city):
         browser.element('.town__link').click()
-        browser.all('[class="town-popup__item town-popup__item_active"]').element_by(have.text('Россия')).click()
+        browser.all('.town-popup__item').element_by(have.text('Россия')).click()
         browser.element('[placeholder = "Поиск города"]').type(city)
-        browser.element('[class="town-popup__item-city"]').click()
+        browser.element('.town-popup__item-city').click()
 
     def assert_city(self, city):
         browser.element('.town__link').should(have.text(city))
@@ -28,7 +23,7 @@ class MainPage:
         browser.element('[type = "button"]').click()
 
     def choose_im(self):
-        browser.all('[class="personal-accounts__text"]').element_by(have.text('Для интернет-магазинов')).click()
+        browser.all('.personal-accounts__text').element_by(have.text('Для интернет-магазинов')).click()
         browser.switch_to_previous_tab()
 
     def assert_personal_account(self):
@@ -53,3 +48,6 @@ class MainPage:
     def status_parcel(self):
         browser.element('.track-details-item__body').should(
             have.text('Получена информация о заказе. Отправление еще не передано на доставку в Boxberry'))
+
+
+main_page = MainPage()

@@ -1,9 +1,8 @@
-from boxberry.pages.main_page import MainPage
+from boxberry_project_tests.pages.main_page import main_page
 import allure
 
 
 def test_set_city(setup_browser):
-    main_page = MainPage()
     with allure.step('Open main page'):
         main_page.open()
     with allure.step('Select city'):
@@ -14,7 +13,6 @@ def test_set_city(setup_browser):
 
 
 def test_open_page_login_im(setup_browser):
-    main_page = MainPage()
     with allure.step('Open main page'):
         main_page.open()
     with allure.step('Verification city'):
@@ -29,7 +27,6 @@ def test_open_page_login_im(setup_browser):
 
 
 def test_password_recovery_im(setup_browser):
-    main_page = MainPage()
     with allure.step('Open the login page for online stores'):
         main_page.open_page_im()
     with allure.step('Input login'):
@@ -42,7 +39,6 @@ def test_password_recovery_im(setup_browser):
 
 
 def test_parcel_search(setup_browser):
-    main_page = MainPage()
     with allure.step('Open main page'):
         main_page.open()
     with allure.step('Parsel tracking'):

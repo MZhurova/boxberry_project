@@ -1,5 +1,5 @@
 pytest~=7.4.2
-selene>=2.0.0b4
+selene>=2.0.0rc4
 allure-pytest==2.9.45
 python-dotenv==0.20.0
 requests==2.31.0

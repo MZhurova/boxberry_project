@@ -1,13 +1,8 @@
-import time
-
-from boxberry.pages.e_commerce_page import ECommercePage
+from boxberry_project_tests.pages.e_commerce_page import e_commerce_page
 import allure
-from selene.support.shared import browser
-from selene import have, by
 
 
 def test_calculate_parcel_business_client(setup_browser):
-    e_commerce_page = ECommercePage()
     with allure.step('Open e-commerce page'):
         e_commerce_page.open()
     with allure.step('Calculate the cost of the parcel for business partner'):
@@ -18,7 +13,6 @@ def test_calculate_parcel_business_client(setup_browser):
 
 
 def test_show_point(setup_browser):
-    e_commerce_page = ECommercePage()
     with allure.step('Open e-commerce page'):
         e_commerce_page.open()
     with allure.step('Clicking the button show point'):
@@ -31,7 +25,6 @@ def test_show_point(setup_browser):
 
 
 def test_parcel_not_found(setup_browser):
-    e_commerce_page = ECommercePage()
     with allure.step('Open e-commerce page'):
         e_commerce_page.open()
     with allure.step('Parsel tracking'):

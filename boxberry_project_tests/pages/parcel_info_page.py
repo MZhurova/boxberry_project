@@ -1,6 +1,5 @@
-from selene.support.shared import browser
-from selene import have
-import time
+from selene import browser, have, be, command
+
 
 class ParcelInfoPage:
 
@@ -10,8 +9,7 @@ class ParcelInfoPage:
 
     def calculate_parcel(self, city_start, city_finish):
         browser.element('.cta__button').click()
-        time.sleep(3)
-        browser.element('[name="sender"]').type(city_start)
+        browser.element('[name="sender"]').should(be.visible).type(city_start)
         browser.element('[name="receiver"]').type(city_finish)
         browser.element('[name="publicPrice"]').type('0')
         browser.element('[data-handler="renderPackagesList"]').click()
@@ -23,8 +21,11 @@ class ParcelInfoPage:
         browser.element('.end-information1__price').should(have.text(value))
 
     def click_how_receive_parsel(self):
-        browser.driver.execute_script("window.scrollTo(0, 1080)")
+        browser.element('.accordion__title-span').perform(command.js.scroll_into_view)
         browser.element('div.col-12.col-sm-auto  > .cta__button').click()
 
     def assert_text_on_page_how_receive_parsel(self):
         browser.element('.pageTitle__title').should(have.text('Получить посылку'))
+
+
+parcel_info_page = ParcelInfoPage()

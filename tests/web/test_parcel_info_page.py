@@ -1,20 +1,18 @@
 import allure
-from boxberry.pages.parcel_info_page import ParcelInfoPage
+from boxberry_project_tests.pages.parcel_info_page import parcel_info_page
 
 
 def test_calculate_parcel_retail_client(setup_browser):
-    parcel_info_page = ParcelInfoPage()
     with allure.step('Open parcel information page'):
         parcel_info_page.open()
     with allure.step('Calculate the cost of the parcel'):
-        parcel_info_page.calculate_parcel('Екатеринбург (Свердловская)','Томск (Томская)')
+        parcel_info_page.calculate_parcel('Екатеринбург (Свердловская)', 'Томск (Томская)')
 
     with allure.step('Assert delivery cost'):
-        parcel_info_page.delivery_cost('516 ')
+        parcel_info_page.delivery_cost('522 ')
 
 
 def test_info_how_receive_parsel(setup_browser):
-    parcel_info_page = ParcelInfoPage()
     with allure.step('Open parcel information page'):
         parcel_info_page.open()
     with allure.step('Click on the "how to receive a parcel" button'):

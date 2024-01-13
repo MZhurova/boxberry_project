@@ -1,6 +1,4 @@
-from selene.support.shared import browser
-from selene import have, command
-import time
+from selene import browser, have, be, command
 
 
 class ECommercePage:
@@ -10,21 +8,18 @@ class ECommercePage:
         browser.element('.modal-new-year__btn_cancel').click()
 
     def calculate_parcel_for_business(self, start_city, finish_city, height, length, width, weight):
-        time.sleep(3)
         browser.element('#item-calculator > a').click()
-        time.sleep(3)
+        browser.element('.scheme__icon').perform(command.js.scroll_into_view)
+        browser.element('.calculator__head').should(be.visible).click()
         browser.element('.multiselect__placeholder').click()
-        time.sleep(3)
-        browser.element('input.multiselect__input').type(start_city).press_enter()
+        browser.element('input.multiselect__input').should(be.blank).type(start_city).press_enter()
         browser.element('.multiselect__placeholder').click()
-        time.sleep(3)
-        browser.element('[placeholder="Город-получатель"]').type(finish_city).press_enter()
-        browser.element('[placeholder="Оценочная стоимость"]').type('0')
-        browser.element('[placeholder="Высота"]').type(height)
-        browser.element('[placeholder="Ширина"]').type(length)
-        browser.element('[placeholder="Длина"]').type(width)
+        browser.element('[placeholder="Город-получатель"]').should(be.blank).type(finish_city).press_enter()
+        browser.element('#calcCost').type('0')
+        browser.element('#calcHeight').type(height)
+        browser.element('#calcWidth').type(length)
+        browser.element('#calcLength').type(width)
         browser.element('#calcWeight').type(weight)
-        time.sleep(3)
         browser.element('#calculator > ul > div:nth-child(2) > div > a.calculator__button').click()
         browser.element('.calculator-total__cost').should(have.text('1 568'))
 
@@ -47,3 +42,6 @@ class ECommercePage:
 
     def assert_parcel_not_found(self):
         browser.element('.empty-search-result__title').should(have.text('Номер заказа не найден'))
+
+
+e_commerce_page = ECommercePage()
