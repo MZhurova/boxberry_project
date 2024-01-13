@@ -6,7 +6,7 @@ from allure_commons.types import Severity
 
 @allure.tag("api")
 @allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'API')
 @allure.title("Daily api successfull")
 @allure.feature("Daily")
@@ -24,8 +24,8 @@ def test_daily_successfully(api_url):
 
 
 @allure.tag("api")
-@allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.severity(Severity.NORMAL)
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'API')
 @allure.title("Daily api successfull body and len")
 @allure.feature("Daily")

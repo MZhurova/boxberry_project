@@ -6,7 +6,7 @@ from allure_commons.types import Severity
 
 @allure.tag("api")
 @allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'API')
 @allure.title("Calculator api successfully")
 @allure.feature("Calculate parcel")
@@ -37,7 +37,7 @@ def test_calculator_successfully(api_url):
 
 @allure.tag("api")
 @allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'API')
 @allure.title("Calculator api successfully body")
 @allure.feature("Calculate parcel")
@@ -68,7 +68,7 @@ def test_calculator_match_body(api_url):
 
 @allure.tag("api")
 @allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'API')
 @allure.title("Calculator services cost")
 @allure.feature("Calculate parcel")
@@ -101,7 +101,7 @@ def test_calculator_services_cost(api_url):
 
 @allure.tag("api")
 @allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'API')
 @allure.title("Calculator bad request")
 @allure.feature("Calculate parcel")

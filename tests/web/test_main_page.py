@@ -5,7 +5,7 @@ from allure_commons.types import Severity
 
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'WEB')
 @allure.title("Set city")
 @allure.feature("City")
@@ -21,7 +21,7 @@ def test_set_city(setup_browser):
 
 @allure.tag("web")
 @allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'WEB')
 @allure.title("Open page login im")
 @allure.feature("Login IM")
@@ -41,7 +41,7 @@ def test_open_page_login_im(setup_browser):
 
 @allure.tag("web")
 @allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'WEB')
 @allure.title("Recovery password for im")
 @allure.feature("Password recovery")
@@ -59,7 +59,7 @@ def test_recovery_password_im(setup_browser):
 
 @allure.tag("web")
 @allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'WEB')
 @allure.title("Parsel search")
 @allure.feature("Tracking")

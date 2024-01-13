@@ -5,7 +5,7 @@ from allure_commons.types import Severity
 
 @allure.tag("web")
 @allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'WEB')
 @allure.title("Calculate parcel business client")
 @allure.feature("Calculate parcel")
@@ -21,7 +21,7 @@ def test_calculate_parcel_business_client(setup_browser):
 
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'WEB')
 @allure.title("Show point")
 @allure.feature("Points")
@@ -39,7 +39,7 @@ def test_show_point(setup_browser):
 
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'WEB')
 @allure.title("Parcel not found")
 @allure.feature("Tracking")

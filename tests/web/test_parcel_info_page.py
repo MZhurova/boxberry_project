@@ -5,7 +5,7 @@ from allure_commons.types import Severity
 
 @allure.tag("web")
 @allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'WEB')
 @allure.title("Calculate parcel retail client")
 @allure.feature("Calculate parcel")
@@ -20,8 +20,8 @@ def test_calculate_parcel_retail_client(setup_browser):
 
 
 @allure.tag("web")
-@allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.severity(Severity.MINOR)
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'WEB')
 @allure.title("Parcel information page")
 @allure.feature("Parcel info")

@@ -6,7 +6,7 @@ from allure_commons.types import Severity
 
 @allure.tag("api")
 @allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'API')
 @allure.title("Tracking api successfully")
 @allure.feature("Tracking")
@@ -28,7 +28,7 @@ def test_tracking_successfully(api_url):
 
 @allure.tag("api")
 @allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'API')
 @allure.title("Tracking faund by searchid")
 @allure.feature("Tracking")
@@ -50,8 +50,8 @@ def test_tracking_faund_searchid(api_url):
 
 
 @allure.tag("api")
-@allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.severity(Severity.MINOR)
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'API')
 @allure.title("Tracking not found")
 @allure.feature("Tracking")

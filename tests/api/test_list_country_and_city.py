@@ -5,7 +5,7 @@ from allure_commons.types import Severity
 
 @allure.tag("api")
 @allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'API')
 @allure.title("Country and City api successfully")
 @allure.feature("Country and City")
@@ -22,8 +22,8 @@ def test_list_country_and_city_successfully(api_url):
 
 
 @allure.tag("api")
-@allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.severity(Severity.NORMAL)
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'API')
 @allure.title("Country api successfull body, code and len")
 @allure.feature("Country and City")
@@ -43,8 +43,8 @@ def test_list_country_name_code_and_len(api_url):
 
 
 @allure.tag("api")
-@allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.severity(Severity.NORMAL)
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'API')
 @allure.title("City api successfull body, code and len")
 @allure.feature("Country and City")

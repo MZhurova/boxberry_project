@@ -7,7 +7,7 @@ from allure_commons.types import Severity
 
 @allure.tag("api")
 @allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'API')
 @allure.title("City api successfully")
 @allure.feature("City")
@@ -29,7 +29,7 @@ def test_city_successfully(api_url):
 
 @allure.tag("api")
 @allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'API')
 @allure.title("City found by citycode and perpage")
 @allure.feature("City")
@@ -53,8 +53,8 @@ def test_citycode_and_perpage(api_url):
 
 
 @allure.tag("api")
-@allure.severity(Severity.CRITICAL)
-@allure.label("owner", "m.zhurova")
+@allure.severity(Severity.NORMAL)
+@allure.label("owner", "mzhurova")
 @allure.label('layer', 'API')
 @allure.title("City found by citycode")
 @allure.feature("City")
