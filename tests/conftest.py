@@ -2,6 +2,7 @@ import pytest
 from selene import browser
 from dotenv import load_dotenv
 from boxberry_project_tests.utils import attach
+from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import os
 
