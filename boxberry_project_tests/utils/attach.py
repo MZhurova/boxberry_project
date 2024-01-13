@@ -32,7 +32,7 @@ def add_video(browser):
 
 
 def load_schema(filepath):
-    with open((os.path.dirname(os.path.abspath(Path(__file__).parent)) + '/json_schemas_and_body/' + filepath), 'r',
+    with open((os.path.dirname(os.path.abspath(Path(__file__).parent.parent)) + '/json_schemas_and_body/' + filepath), 'r',
               encoding="utf-8") as file:
         schema = json.load(file)
         return schema

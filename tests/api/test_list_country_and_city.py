@@ -1,5 +1,5 @@
 import allure
-from boxberry_project_tests.utils import load_schema, boxberry_api_get
+from boxberry_project_tests.utils.attach import load_schema, boxberry_api_get
 
 
 def test_list_country_and_city_successfully(api_url):
