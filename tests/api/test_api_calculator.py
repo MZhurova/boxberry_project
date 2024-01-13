@@ -73,7 +73,7 @@ def test_api_calculator_services_cost(api_url):
 
     with allure.step('Assert the result'):
         assert result.json()["status"] == 1
-        assert result.json()["data"][0]["default_services_cost"] == 51850
+        assert result.json()["data"][0]["default_services_cost"] == 52450
 
 
 def test_api_calculator_bad_request(api_url):

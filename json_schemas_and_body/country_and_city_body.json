@@ -1229,6 +1229,18 @@
             "prefix": "г"
         },
         {
+            "name": "ВНИИССОК",
+            "code": "Н00085251",
+            "country_code": "643",
+            "reception_lap": true,
+            "delivery_lap": true,
+            "reception": true,
+            "pickup_point": true,
+            "region": "Московская",
+            "region_prefix": "обл",
+            "prefix": "п"
+        },
+        {
             "name": "Внуково",
             "code": "21759",
             "country_code": "643",
@@ -2609,12 +2621,24 @@
             "prefix": "ст-ца"
         },
         {
+            "name": "Казань",
+            "code": "90",
+            "country_code": "643",
+            "reception_lap": true,
+            "delivery_lap": true,
+            "reception": true,
+            "pickup_point": true,
+            "region": "Татарстан",
+            "region_prefix": "Респ",
+            "prefix": "г"
+        },
+        {
             "name": "Калининград",
             "code": "155",
             "country_code": "643",
             "reception_lap": true,
             "delivery_lap": true,
-            "reception": false,
+            "reception": true,
             "pickup_point": true,
             "region": "Калининградская",
             "region_prefix": "обл",
@@ -4541,18 +4565,6 @@
             "prefix": "г"
         },
         {
-            "name": "Молочный",
-            "code": "Н00088413",
-            "country_code": "643",
-            "reception_lap": true,
-            "delivery_lap": true,
-            "reception": true,
-            "pickup_point": true,
-            "region": "Мурманская",
-            "region_prefix": "обл",
-            "prefix": "пгт"
-        },
-        {
             "name": "Монино",
             "code": "Н00088330",
             "country_code": "643",
@@ -4587,18 +4599,6 @@
             "region": "Москва",
             "region_prefix": "",
             "prefix": "г"
-        },
-        {
-            "name": "Москва",
-            "code": "Н00141313",
-            "country_code": "643",
-            "reception_lap": false,
-            "delivery_lap": true,
-            "reception": true,
-            "pickup_point": true,
-            "region": "Тверская",
-            "region_prefix": "обл",
-            "prefix": "д"
         },
         {
             "name": "Московский",
@@ -6029,6 +6029,18 @@
             "prefix": "г"
         },
         {
+            "name": "Развилка",
+            "code": "Н00083853",
+            "country_code": "643",
+            "reception_lap": true,
+            "delivery_lap": true,
+            "reception": true,
+            "pickup_point": true,
+            "region": "Московская",
+            "region_prefix": "обл",
+            "prefix": "п"
+        },
+        {
             "name": "Разумное",
             "code": "Н00038228",
             "country_code": "643",
@@ -6989,6 +7001,18 @@
             "prefix": "пгт"
         },
         {
+            "name": "Струнино",
+            "code": "02201",
+            "country_code": "643",
+            "reception_lap": true,
+            "delivery_lap": true,
+            "reception": true,
+            "pickup_point": true,
+            "region": "Владимирская",
+            "region_prefix": "обл",
+            "prefix": "г"
+        },
+        {
             "name": "Ступино",
             "code": "03390",
             "country_code": "643",
@@ -7409,6 +7433,18 @@
             "prefix": "г"
         },
         {
+            "name": "Углич",
+            "code": "04363",
+            "country_code": "643",
+            "reception_lap": true,
+            "delivery_lap": true,
+            "reception": true,
+            "pickup_point": true,
+            "region": "Ярославская",
+            "region_prefix": "обл",
+            "prefix": "г"
+        },
+        {
             "name": "Удельная",
             "code": "Н00086125",
             "country_code": "643",
@@ -7574,6 +7610,18 @@
             "pickup_point": true,
             "region": "Коми",
             "region_prefix": "Респ",
+            "prefix": "г"
+        },
+        {
+            "name": "Фатеж",
+            "code": "03074",
+            "country_code": "643",
+            "reception_lap": true,
+            "delivery_lap": true,
+            "reception": true,
+            "pickup_point": true,
+            "region": "Курская",
+            "region_prefix": "обл",
             "prefix": "г"
         },
         {
@@ -9133,18 +9181,6 @@
             "reception": true,
             "pickup_point": true,
             "region": "Гродненская",
-            "region_prefix": "",
-            "prefix": ""
-        },
-        {
-            "name": "Мотоль",
-            "code": "Н01009140",
-            "country_code": "112",
-            "reception_lap": true,
-            "delivery_lap": true,
-            "reception": true,
-            "pickup_point": true,
-            "region": "Брестская",
             "region_prefix": "",
             "prefix": ""
         },

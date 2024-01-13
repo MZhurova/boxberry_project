@@ -35,6 +35,6 @@ def test_api_list_city_name_code_and_len(api_url):
 
     with allure.step('Assert the result'):
         assert result.json()['cities'][0]["name"] == "Абакан" and result.json()['cities'][0]["code"] == "5"
-        assert len(result.json()["cities"]) == 911
+        assert len(result.json()["cities"]) == 914
 
 

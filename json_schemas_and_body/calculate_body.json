@@ -5,10 +5,10 @@
         {
             "delivery_type": 1,
             "cd_price": 40000,
-            "cost": 96300,
-            "base": 55600,
+            "cost": 96900,
+            "base": 56200,
             "discount": 0,
-            "default_services_cost": 56300,
+            "default_services_cost": 56900,
             "services_cost": 0,
             "services": [
                 {
@@ -42,16 +42,16 @@
                     "cost": 700
                 }
             ],
-            "return_cost": 77040,
+            "return_cost": 77520,
             "time": "22"
         },
         {
             "delivery_type": 2,
             "cd_price": 20000,
-            "cost": 76300,
-            "base": 55600,
+            "cost": 76900,
+            "base": 56200,
             "discount": 0,
-            "default_services_cost": 56300,
+            "default_services_cost": 56900,
             "services_cost": 0,
             "services": [
                 {
@@ -85,16 +85,16 @@
                     "cost": 700
                 }
             ],
-            "return_cost": 61040,
+            "return_cost": 61520,
             "time": "11"
         },
         {
             "delivery_type": 3,
             "cd_price": 20000,
-            "cost": 76300,
-            "base": 55600,
+            "cost": 76900,
+            "base": 56200,
             "discount": 0,
-            "default_services_cost": 56300,
+            "default_services_cost": 56900,
             "services_cost": 0,
             "services": [
                 {
@@ -128,16 +128,16 @@
                     "cost": 700
                 }
             ],
-            "return_cost": 61040,
+            "return_cost": 61520,
             "time": "11"
         },
         {
             "delivery_type": 4,
             "cd_price": 0,
-            "cost": 56300,
-            "base": 55600,
+            "cost": 56900,
+            "base": 56200,
             "discount": 0,
-            "default_services_cost": 56300,
+            "default_services_cost": 56900,
             "services_cost": 0,
             "services": [
                 {
@@ -171,7 +171,7 @@
                     "cost": 700
                 }
             ],
-            "return_cost": 45040,
+            "return_cost": 45520,
             "time": "10"
         }
     ]

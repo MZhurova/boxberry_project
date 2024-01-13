@@ -1,41 +1,41 @@
 [
     {
-        "exchange_rate": 22.1567,
+        "exchange_rate": 21.7423,
         "quantity": 100,
         "name": "Армянский драм",
         "numeric_code": "051",
         "symbol_code": "AMD"
     },
     {
-        "exchange_rate": 28.2261,
+        "exchange_rate": 27.9457,
         "quantity": 1,
         "name": "Белорусский рубль",
         "numeric_code": "933",
         "symbol_code": "BYN"
     },
     {
-        "exchange_rate": 99.1919,
+        "exchange_rate": 96.7517,
         "quantity": 1,
         "name": "Евро",
         "numeric_code": "978",
         "symbol_code": "EUR"
     },
     {
-        "exchange_rate": 19.7708,
+        "exchange_rate": 19.4501,
         "quantity": 100,
         "name": "Казахстанский тенге",
         "numeric_code": "398",
         "symbol_code": "KZT"
     },
     {
-        "exchange_rate": 10.0677,
-        "quantity": 10,
+        "exchange_rate": 98.6704,
+        "quantity": 100,
         "name": "Киргизский сом",
         "numeric_code": "417",
         "symbol_code": "KGS"
     },
     {
-        "exchange_rate": 81.8712,
+        "exchange_rate": 80.4759,
         "quantity": 10,
         "name": "Таджикский сомони",
         "numeric_code": "972",
