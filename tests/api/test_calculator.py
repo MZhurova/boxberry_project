@@ -1,8 +1,15 @@
 import allure
 import jsonschema
 from boxberry_project_tests.utils.attach import load_schema, boxberry_api_get
+from allure_commons.types import Severity
 
 
+@allure.tag("api")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'API')
+@allure.title("Calculator api successfully")
+@allure.feature("Calculate parcel")
 def test_calculator_successfully(api_url):
     method = "TarificationLaP"
     sender_city = 23
@@ -28,6 +35,12 @@ def test_calculator_successfully(api_url):
         jsonschema.validate(result.json(), schema)
 
 
+@allure.tag("api")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'API')
+@allure.title("Calculator api successfully body")
+@allure.feature("Calculate parcel")
 def test_calculator_match_body(api_url):
     method = "TarificationLaP"
     sender_city = 25
@@ -53,6 +66,12 @@ def test_calculator_match_body(api_url):
         assert result.json() == file
 
 
+@allure.tag("api")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'API')
+@allure.title("Calculator services cost")
+@allure.feature("Calculate parcel")
 def test_calculator_services_cost(api_url):
     method = "TarificationLaP"
     sender_city = 11
@@ -80,6 +99,12 @@ def test_calculator_services_cost(api_url):
         assert result.json()["data"][0]["default_services_cost"] == 52450
 
 
+@allure.tag("api")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'API')
+@allure.title("Calculator bad request")
+@allure.feature("Calculate parcel")
 def test_calculator_bad_request(api_url):
     method = "TarificationLaP"
     sender_city = ""

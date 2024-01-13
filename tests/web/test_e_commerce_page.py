@@ -5,7 +5,7 @@ from allure_commons.types import Severity
 
 @allure.tag("web")
 @allure.severity(Severity.CRITICAL)
-@allure.label("owner", "allure8")
+@allure.label("owner", "m.zhurova")
 @allure.label('layer', 'WEB')
 @allure.title("Calculate parcel business client")
 @allure.feature("Calculate parcel")
@@ -18,12 +18,13 @@ def test_calculate_parcel_business_client(setup_browser):
     with allure.step('Assert delivery cost for business partner'):
         e_commerce_page.delivery_cost_for_business('1 568')
 
+
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
-@allure.label("owner", "allure8")
+@allure.label("owner", "m.zhurova")
 @allure.label('layer', 'WEB')
 @allure.title("Show point")
-@allure.feature("Calculate parcel")
+@allure.feature("Points")
 def test_show_point(setup_browser):
     with allure.step('Open e-commerce page'):
         e_commerce_page.open()
@@ -35,12 +36,13 @@ def test_show_point(setup_browser):
     with allure.step("Assert chosen city"):
         e_commerce_page.assert_chosen_city('Новосибирск')
 
+
 @allure.tag("web")
 @allure.severity(Severity.NORMAL)
-@allure.label("owner", "allure8")
+@allure.label("owner", "m.zhurova")
 @allure.label('layer', 'WEB')
 @allure.title("Parcel not found")
-@allure.feature("Calculate parcel")
+@allure.feature("Tracking")
 def test_parcel_not_found(setup_browser):
     with allure.step('Open e-commerce page'):
         e_commerce_page.open()

@@ -1,7 +1,14 @@
 from boxberry_project_tests.pages.main_page import main_page
 import allure
+from allure_commons.types import Severity
 
 
+@allure.tag("web")
+@allure.severity(Severity.NORMAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'WEB')
+@allure.title("Set city")
+@allure.feature("City")
 def test_set_city(setup_browser):
     with allure.step('Open main page'):
         main_page.open()
@@ -12,6 +19,12 @@ def test_set_city(setup_browser):
         main_page.assert_city('Томск')
 
 
+@allure.tag("web")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'WEB')
+@allure.title("Open page login im")
+@allure.feature("Login IM")
 def test_open_page_login_im(setup_browser):
     with allure.step('Open main page'):
         main_page.open()
@@ -26,7 +39,13 @@ def test_open_page_login_im(setup_browser):
         main_page.assert_personal_account()
 
 
-def test_password_recovery_im(setup_browser):
+@allure.tag("web")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'WEB')
+@allure.title("Recovery password for im")
+@allure.feature("Password recovery")
+def test_recovery_password_im(setup_browser):
     with allure.step('Open the login page for online stores'):
         main_page.open_page_im()
     with allure.step('Input login'):
@@ -38,6 +57,12 @@ def test_password_recovery_im(setup_browser):
         main_page.assert_open_page_password_recovery()
 
 
+@allure.tag("web")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'WEB')
+@allure.title("Parsel search")
+@allure.feature("Tracking")
 def test_parcel_search(setup_browser):
     with allure.step('Open main page'):
         main_page.open()

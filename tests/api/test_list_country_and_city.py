@@ -1,7 +1,14 @@
 import allure
 from boxberry_project_tests.utils.attach import load_schema, boxberry_api_get
+from allure_commons.types import Severity
 
 
+@allure.tag("api")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'API')
+@allure.title("Country and City api successfully")
+@allure.feature("Country and City")
 def test_list_country_and_city_successfully(api_url):
     url = f'{api_url}/api/v1/cities/list'
     file = load_schema("country_and_city_body.json")
@@ -14,6 +21,12 @@ def test_list_country_and_city_successfully(api_url):
         assert file == result.json()
 
 
+@allure.tag("api")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'API')
+@allure.title("Country api successfull body, code and len")
+@allure.feature("Country and City")
 def test_list_country_name_code_and_len(api_url):
     url = f'{api_url}/api/v1/cities/list'
     file = load_schema("country_and_city_body.json")
@@ -29,6 +42,12 @@ def test_list_country_name_code_and_len(api_url):
         assert len(result.json()["country"]) == 7
 
 
+@allure.tag("api")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'API')
+@allure.title("City api successfull body, code and len")
+@allure.feature("Country and City")
 def test_list_city_name_code_and_len(api_url):
     url = f'{api_url}/api/v1/cities/list'
     file = load_schema("country_and_city_body.json")

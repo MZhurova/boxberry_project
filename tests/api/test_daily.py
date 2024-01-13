@@ -1,8 +1,15 @@
 import allure
 import jsonschema
 from boxberry_project_tests.utils.attach import load_schema, boxberry_api_get
+from allure_commons.types import Severity
 
 
+@allure.tag("api")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'API')
+@allure.title("Daily api successfull")
+@allure.feature("Daily")
 def test_daily_successfully(api_url):
     url = f'{api_url}/api/v1/cbr/daily'
     schema = load_schema("response_daily.json")
@@ -16,6 +23,12 @@ def test_daily_successfully(api_url):
         jsonschema.validate(result.json(), schema)
 
 
+@allure.tag("api")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'API')
+@allure.title("Daily api successfull body and len")
+@allure.feature("Daily")
 def test_daily_match_body(api_url):
     url = f'{api_url}/api/v1/cbr/daily'
     file = load_schema("daily_body.json")

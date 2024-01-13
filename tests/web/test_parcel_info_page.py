@@ -1,7 +1,14 @@
 import allure
 from boxberry_project_tests.pages.parcel_info_page import parcel_info_page
+from allure_commons.types import Severity
 
 
+@allure.tag("web")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'WEB')
+@allure.title("Calculate parcel retail client")
+@allure.feature("Calculate parcel")
 def test_calculate_parcel_retail_client(setup_browser):
     with allure.step('Open parcel information page'):
         parcel_info_page.open()
@@ -12,6 +19,12 @@ def test_calculate_parcel_retail_client(setup_browser):
         parcel_info_page.delivery_cost('522 ')
 
 
+@allure.tag("web")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'WEB')
+@allure.title("Parcel information page")
+@allure.feature("Parcel info")
 def test_info_how_receive_parsel(setup_browser):
     with allure.step('Open parcel information page'):
         parcel_info_page.open()

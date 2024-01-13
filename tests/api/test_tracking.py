@@ -1,8 +1,15 @@
 import allure
 import jsonschema
 from boxberry_project_tests.utils.attach import load_schema, boxberry_api_get
+from allure_commons.types import Severity
 
 
+@allure.tag("api")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'API')
+@allure.title("Tracking api successfully")
+@allure.feature("Tracking")
 def test_tracking_successfully(api_url):
     searchId = '5555'
     url = f'{api_url}/api/v1/tracking/order/get'
@@ -19,6 +26,12 @@ def test_tracking_successfully(api_url):
         jsonschema.validate(result.json(), schema)
 
 
+@allure.tag("api")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'API')
+@allure.title("Tracking faund by searchid")
+@allure.feature("Tracking")
 def test_tracking_faund_searchid(api_url):
     searchId = 'ACND280139442'
     url = f'{api_url}/api/v1/tracking/order/get'
@@ -36,6 +49,12 @@ def test_tracking_faund_searchid(api_url):
         assert result.json()[0]["ProgramNumber"] == searchId
 
 
+@allure.tag("api")
+@allure.severity(Severity.CRITICAL)
+@allure.label("owner", "m.zhurova")
+@allure.label('layer', 'API')
+@allure.title("Tracking not found")
+@allure.feature("Tracking")
 def test_tracking_not_found(api_url):
     searchId = 'fffftttttttttttt'
     url = f'{api_url}/api/v1/tracking/order/get'
