@@ -83,7 +83,7 @@ allure serve build/allure-results
 > <a target="_blank" href="https://jenkins.autotests.cloud/job/boxberry_project/">Ссылка на проект</a>
 
 #### Запуск автотестов в Jenkins
-1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/MZhurova_qa_guru_python_8_15/">проект</a>
+1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/boxberry_project/">проект</a>
 
 ![jenkins project main page](design/images/jenkins.jpg)
 
