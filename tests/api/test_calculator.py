@@ -3,7 +3,7 @@ import jsonschema
 from utils.attach import load_schema, boxberry_api_get
 
 
-def test_api_calculator_successfully(api_url):
+def test_calculator_successfully(api_url):
     method = "TarificationLaP"
     sender_city = 23
     receiver_city = 19
@@ -28,7 +28,7 @@ def test_api_calculator_successfully(api_url):
         jsonschema.validate(result.json(), schema)
 
 
-def test_api_calculator_match_body(api_url):
+def test_calculator_match_body(api_url):
     method = "TarificationLaP"
     sender_city = 25
     receiver_city = 57
@@ -49,10 +49,11 @@ def test_api_calculator_match_body(api_url):
         result = boxberry_api_get(url=url)
 
     with allure.step('Assert the result'):
+        assert result.status_code == 200
         assert result.json() == file
 
 
-def test_api_calculator_services_cost(api_url):
+def test_calculator_services_cost(api_url):
     method = "TarificationLaP"
     sender_city = 11
     receiver_city = 41
@@ -67,16 +68,19 @@ def test_api_calculator_services_cost(api_url):
            f'&package[height]=2&'
            f'package[depth]=2'
            )
+    schema = load_schema("response_calculate.json")
 
     with allure.step('Make a request'):
         result = boxberry_api_get(url=url)
 
     with allure.step('Assert the result'):
+        assert result.status_code == 200
+        jsonschema.validate(result.json(), schema)
         assert result.json()["status"] == 1
         assert result.json()["data"][0]["default_services_cost"] == 52450
 
 
-def test_api_calculator_bad_request(api_url):
+def test_calculator_bad_request(api_url):
     method = "TarificationLaP"
     sender_city = ""
     receiver_city = ""
@@ -99,4 +103,4 @@ def test_api_calculator_bad_request(api_url):
     with allure.step('Assert the result'):
         assert result.status_code == 400
         jsonschema.validate(result.json(), schema)
-        assert result.json()["error"] == True
+        assert result.json()["error"] is True
