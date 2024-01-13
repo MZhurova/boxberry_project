@@ -80,7 +80,7 @@ allure serve build/allure-results
 
 
 ### Проект в Jenkins
-> <a target="_blank" href="https://jenkins.autotests.cloud/job/MZhurova_qa_guru_python_8_15/">Ссылка на проект</a>
+> <a target="_blank" href="https://jenkins.autotests.cloud/job/boxberry_project/">Ссылка на проект</a>
 
 #### Запуск автотестов в Jenkins
 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/MZhurova_qa_guru_python_8_15/">проект</a>
